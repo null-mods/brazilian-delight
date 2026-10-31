@@ -12,7 +12,7 @@ Addon for [Farmer's Delight](https://modrinth.com/mod/farmers-delight) bringing 
 
 - [ ] Wild cassava
   - [ ] Generates in savannas
-- [ ] Cassava crop
+- [ ] Cassava crop 
 - [ ] Coffee beans
   - [ ] Coffee
   - [ ] Coffee with milk
@@ -25,6 +25,8 @@ Addon for [Farmer's Delight](https://modrinth.com/mod/farmers-delight) bringing 
 - [ ] Feijão tropeiro
 - [ ] Acarajé (derived from the Yoruba akara)
 - [ ] Brigadeiro
+  - [ ] Cocoa Powder
+  - [ ] Condensed Milk
 - [ ] Quindim (derived from the Portuguese Brisas do Lis)
 - [ ] Brazilian carrot cake  
   - [ ] Plain
