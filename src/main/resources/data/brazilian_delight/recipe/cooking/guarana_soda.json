@@ -1,5 +1,9 @@
 {
   "type": "farmersdelight:cooking",
+  "container": {
+    "count": 1,
+    "id": "minecraft:iron_nugget"
+  },
   "experience": 1.0,
   "cookingtime": 200,
   "ingredients": [
@@ -13,7 +17,10 @@
       "item": "minecraft:sugar"
     },
     {
-      "item": "minecraft:iron_nugget"
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "minecraft:sugar"
     }
   ],
   "recipe_book_tab": "drinks",
