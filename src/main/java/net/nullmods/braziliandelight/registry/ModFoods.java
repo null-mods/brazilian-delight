@@ -7,15 +7,14 @@ import net.minecraft.world.food.FoodProperties;
 public final class ModFoods {
 
     public static final FoodProperties GUARANA = new FoodProperties.Builder()
-            .nutrition(2)
-            .saturationModifier(0.3F)
-            .alwaysEdible()
+            .nutrition(1)
+            .saturationModifier(0.1F)
             .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 600, 0), 0.3F)
             .build();
 
     public static final FoodProperties GUARANA_SODA = new FoodProperties.Builder()
             .nutrition(2)
-            .saturationModifier(0.3F)
+            .saturationModifier(0.6F)
             .alwaysEdible()
             .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 1200, 0), 0.3F)
             .build();
