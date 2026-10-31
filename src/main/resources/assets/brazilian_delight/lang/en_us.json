@@ -1,3 +1,6 @@
 {
-  "itemGroup.brazilian_delight": "Brazilian Delight"
+  "itemGroup.brazilian_delight": "Brazilian Delight",
+  "block.brazilian_delight.guarana_bush": "Guarana Bush",
+  "item.brazilian_delight.guarana": "Guarana",
+  "item.brazilian_delight.guarana_soda": "Guarana Soda"
 }

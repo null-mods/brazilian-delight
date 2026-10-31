@@ -1,0 +1,24 @@
+{
+  "type": "farmersdelight:cooking",
+  "experience": 1.0,
+  "cookingtime": 200,
+  "ingredients": [
+    {
+      "item": "brazilian_delight:guarana"
+    },
+    {
+      "item": "brazilian_delight:guarana"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "minecraft:iron_nugget"
+    }
+  ],
+  "recipe_book_tab": "drinks",
+  "result": {
+    "count": 1,
+    "id": "brazilian_delight:guarana_soda"
+  }
+}

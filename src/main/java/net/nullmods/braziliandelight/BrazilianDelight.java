@@ -4,6 +4,7 @@ import com.mojang.logging.LogUtils;
 import net.minecraft.resources.ResourceLocation;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
+import net.nullmods.braziliandelight.registry.ModBlockEntities;
 import net.nullmods.braziliandelight.registry.ModBlocks;
 import net.nullmods.braziliandelight.registry.ModCreativeTabs;
 import net.nullmods.braziliandelight.registry.ModItems;
@@ -17,6 +18,7 @@ public class BrazilianDelight {
     public BrazilianDelight(IEventBus modBus) {
         ModBlocks.BLOCKS.register(modBus);
         ModItems.ITEMS.register(modBus);
+        ModBlockEntities.BLOCK_ENTITIES.register(modBus);
         ModCreativeTabs.TABS.register(modBus);
     }
 
