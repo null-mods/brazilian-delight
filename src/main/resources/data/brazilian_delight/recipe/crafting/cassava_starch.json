@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    { "item": "brazilian_delight:cassava" },
+    { "item": "brazilian_delight:cassava" },
+    { "item": "brazilian_delight:cassava" },
+    { "tag": "c:buckets/water" }
+  ],
+  "result": {
+    "id": "brazilian_delight:cassava_starch",
+    "count": 3
+  }
+}

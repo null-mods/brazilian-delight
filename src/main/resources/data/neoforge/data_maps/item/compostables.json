@@ -2,6 +2,9 @@
   "values": {
     "brazilian_delight:guarana": {
       "chance": 0.3
+    },
+    "brazilian_delight:cassava": {
+      "chance": 0.5
     }
   }
 }

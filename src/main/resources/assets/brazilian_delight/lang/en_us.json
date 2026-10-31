@@ -1,6 +1,11 @@
 {
-  "itemGroup.brazilian_delight": "Brazilian Delight",
-  "block.brazilian_delight.guarana_bush": "Guarana Bush",
-  "item.brazilian_delight.guarana": "Guarana",
-  "item.brazilian_delight.guarana_soda": "Guarana Soda"
+    "itemGroup.brazilian_delight": "Brazilian Delight",
+    "block.brazilian_delight.guarana_bush": "Guarana Bush",
+    "item.brazilian_delight.guarana": "Guarana",
+    "item.brazilian_delight.guarana_soda": "Guarana Soda",
+    "item.brazilian_delight.cassava": "Cassava",
+    "item.brazilian_delight.cooked_cassava": "Cooked Cassava",
+    "item.brazilian_delight.toasted_cassava_flour": "Toasted Cassava Flour",
+    "item.brazilian_delight.cassava_starch": "Cassava Starch",
+    "item.brazilian_delight.cheese_bread": "Cheese_Bread"
 }

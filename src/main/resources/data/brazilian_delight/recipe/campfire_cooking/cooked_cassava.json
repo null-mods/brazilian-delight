@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "category": "food",
+  "ingredient": {
+    "item": "brazilian_delight:cassava"
+  },
+  "result": {
+    "id": "brazilian_delight:cooked_cassava"
+  },
+  "experience": 0.35,
+  "cookingtime": 600
+}

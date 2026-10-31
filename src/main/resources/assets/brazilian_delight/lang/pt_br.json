@@ -1,6 +1,11 @@
 {
-  "itemGroup.brazilian_delight": "Brazilian Delight",
-  "block.brazilian_delight.guarana_bush": "Arbusto de Guaraná",
-  "item.brazilian_delight.guarana": "Guaraná",
-  "item.brazilian_delight.guarana_soda": "Refrigerante de Guaraná"
+    "itemGroup.brazilian_delight": "Brazilian Delight",
+    "block.brazilian_delight.guarana_bush": "Arbusto de Guaraná",
+    "item.brazilian_delight.guarana": "Guaraná",
+    "item.brazilian_delight.guarana_soda": "Refrigerante de Guaraná",
+    "item.brazilian_delight.cassava": "Mandioca",
+    "item.brazilian_delight.cooked_cassava": "Mandioca Cozida",
+    "item.brazilian_delight.toasted_cassava_flour": "Farinha de Mandioca",
+    "item.brazilian_delight.cassava_starch": "Polvilho",
+    "item.brazilian_delight.cheese_bread": "Pão de Queijo"
 }

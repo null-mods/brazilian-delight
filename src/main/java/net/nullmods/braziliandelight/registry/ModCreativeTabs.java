@@ -15,7 +15,7 @@ public final class ModCreativeTabs {
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> MAIN = TABS.register("main",
             () -> CreativeModeTab.builder()
                     .title(Component.translatable("itemGroup." + BrazilianDelight.MOD_ID))
-                    .icon(() -> new ItemStack(vectorwing.farmersdelight.common.registry.ModItems.COOKING_POT.get()))
+                    .icon(() -> new ItemStack(ModItems.CHEESE_BREAD.get()))
                     .displayItems(
                             (params, output) -> ModItems.ITEMS.getEntries().forEach(item -> output.accept(item.get())))
                     .build());

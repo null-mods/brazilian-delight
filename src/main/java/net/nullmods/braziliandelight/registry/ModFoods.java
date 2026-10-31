@@ -14,9 +14,26 @@ public final class ModFoods {
 
     public static final FoodProperties GUARANA_SODA = new FoodProperties.Builder()
             .nutrition(2)
-            .saturationModifier(0.6F)
+            .saturationModifier(0.3F)
             .alwaysEdible()
             .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 1200, 0), 0.3F)
+            .build();
+
+    public static final FoodProperties CASSAVA = new FoodProperties.Builder()
+            .nutrition(1)
+            .saturationModifier(0.3F)
+            .effect(() -> new MobEffectInstance(MobEffects.POISON, 300, 0), 0.9F)
+            .build();
+
+    public static final FoodProperties COOKED_CASSAVA = new FoodProperties.Builder()
+            .nutrition(3)
+            .saturationModifier(0.6F)
+            .build();
+
+    public static final FoodProperties CHEESE_BREAD = new FoodProperties.Builder()
+            .nutrition(4)
+            .saturationModifier(0.65F)
+            .effect(() -> new MobEffectInstance(MobEffects.DIG_SPEED, 1200, 0), 0.45F)
             .build();
 
     private ModFoods() {

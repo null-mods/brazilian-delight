@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    { "item": "brazilian_delight:cooked_cassava" },
+    { "item": "brazilian_delight:cooked_cassava" },
+    { "item": "brazilian_delight:cooked_cassava" }
+  ],
+  "result": {
+    "id": "brazilian_delight:toasted_cassava_flour",
+    "count": 3
+  }
+}
