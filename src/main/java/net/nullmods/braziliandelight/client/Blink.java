@@ -7,8 +7,8 @@ public enum Blink {
     HALF,
     CLOSED;
 
-    private static final int MIN_PERIOD = 50;
-    private static final int PERIOD_SPREAD = 90;
+    private static final int MIN_PERIOD = 160;
+    private static final int PERIOD_SPREAD = 240;
     private static final float BLINK_LENGTH = 6.0F;
     private static final float SECOND_BLINK_DELAY = 8.0F;
 

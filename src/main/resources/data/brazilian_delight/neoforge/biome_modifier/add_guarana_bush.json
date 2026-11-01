@@ -1,6 +1,12 @@
 {
   "type": "neoforge:add_features",
-  "biomes": "#minecraft:is_jungle",
+  "biomes": {
+    "type": "neoforge:and",
+    "values": [
+      "#c:is_hot/overworld",
+      "#c:is_wet/overworld"
+    ]
+  },
   "features": "brazilian_delight:patch_guarana_bush",
   "step": "vegetal_decoration"
 }

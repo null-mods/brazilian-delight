@@ -22,8 +22,8 @@ public class GuaranaBushRenderer implements BlockEntityRenderer<GuaranaBushBlock
     private static final int FIRST_FRUITING_AGE = 2;
 
     public static final List<ModelResourceLocation> EYELID_MODELS = List.of(
-            eyelid(2, Blink.HALF), eyelid(2, Blink.CLOSED),
-            eyelid(3, Blink.HALF), eyelid(3, Blink.CLOSED));
+            eyelid(2, Blink.HALF), eyelid(2, Blink.CLOSED), lookingRight(2),
+            eyelid(3, Blink.HALF), eyelid(3, Blink.CLOSED), lookingRight(3));
 
     private final BlockRenderDispatcher blockRenderer;
 
@@ -34,6 +34,10 @@ public class GuaranaBushRenderer implements BlockEntityRenderer<GuaranaBushBlock
     private static ModelResourceLocation eyelid(int age, Blink blink) {
         String suffix = blink == Blink.HALF ? "half" : "closed";
         return ModelResourceLocation.standalone(BrazilianDelight.id("block/guarana_bush_stage" + age + "_" + suffix));
+    }
+
+    private static ModelResourceLocation lookingRight(int age) {
+        return ModelResourceLocation.standalone(BrazilianDelight.id("block/guarana_bush_stage" + age + "_right"));
     }
 
     @Override
@@ -47,6 +51,8 @@ public class GuaranaBushRenderer implements BlockEntityRenderer<GuaranaBushBlock
             Blink blink = Blink.at(bush.getBlockPos().asLong(), level.getGameTime(), partialTick);
             if (blink != Blink.OPEN) {
                 model = Minecraft.getInstance().getModelManager().getModel(eyelid(age, blink));
+            } else if (Gaze.at(bush.getBlockPos().asLong(), level.getGameTime()) == Gaze.RIGHT) {
+                model = Minecraft.getInstance().getModelManager().getModel(lookingRight(age));
             }
         }
         blockRenderer.getModelRenderer().renderModel(poseStack.last(), buffers.getBuffer(Sheets.cutoutBlockSheet()),
