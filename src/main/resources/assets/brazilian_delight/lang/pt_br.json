@@ -11,5 +11,12 @@
     "block.brazilian_delight.cassava_crop": "Plantação de Mandioca",
     "block.brazilian_delight.wild_cassava": "Mandioca Selvagem",
     "item.brazilian_delight.grater": "Ralador",
-    "item.brazilian_delight.grated_cassava": "Mandioca Ralada"
+    "item.brazilian_delight.grated_cassava": "Mandioca Ralada",
+    "jei.brazilian_delight.grating": "Ralar",
+    "jei.brazilian_delight.grater.info": "Segure o ralador numa mão e o ingrediente na outra, depois segure o botão direito para ralar.",
+    "block.brazilian_delight.cheese_wheel": "Queijo",
+    "block.brazilian_delight.milk_cauldron": "Caldeirão com Leite",
+    "item.brazilian_delight.cheese_slice": "Fatia de Queijo",
+    "jei.brazilian_delight.cheese_wheel.info": "Despeje um balde de leite num caldeirão vazio e espere o leite coalhar. Depois use a mão vazia no caldeirão para pegar o queijo. Corte-o na tábua com uma faca para ter fatias, ou coloque-o no chão.",
+    "item.brazilian_delight.grated_cheese": "Queijo Ralado"
 }

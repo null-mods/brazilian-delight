@@ -24,7 +24,7 @@
           "condition": "minecraft:block_state_property",
           "block": "brazilian_delight:cassava_crop",
           "properties": {
-            "age": "3"
+            "age": "7"
           }
         }
       ],

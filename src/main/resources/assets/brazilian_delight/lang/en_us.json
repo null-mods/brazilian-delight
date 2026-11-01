@@ -11,5 +11,12 @@
     "block.brazilian_delight.cassava_crop": "Cassava Crop",
     "block.brazilian_delight.wild_cassava": "Wild Cassava",
     "item.brazilian_delight.grater": "Grater",
-    "item.brazilian_delight.grated_cassava": "Grated Cassava"
+    "item.brazilian_delight.grated_cassava": "Grated Cassava",
+    "jei.brazilian_delight.grating": "Grating",
+    "jei.brazilian_delight.grater.info": "Hold the grater in one hand and the ingredient in the other, then hold right click to grate it.",
+    "block.brazilian_delight.cheese_wheel": "Cheese Wheel",
+    "block.brazilian_delight.milk_cauldron": "Milk Cauldron",
+    "item.brazilian_delight.cheese_slice": "Cheese Slice",
+    "jei.brazilian_delight.cheese_wheel.info": "Pour a milk bucket into an empty cauldron and wait for the milk to curdle. Then use an empty hand on the cauldron to take the cheese wheel. Cut it on a cutting board with a knife to get slices, or place it on the ground.",
+    "item.brazilian_delight.grated_cheese": "Grated Cheese"
 }

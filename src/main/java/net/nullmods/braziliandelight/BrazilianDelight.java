@@ -4,6 +4,8 @@ import com.mojang.logging.LogUtils;
 import net.minecraft.resources.ResourceLocation;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.nullmods.braziliandelight.block.MilkCauldronBlock;
 import net.nullmods.braziliandelight.registry.ModBlockEntities;
 import net.nullmods.braziliandelight.registry.ModBlocks;
 import net.nullmods.braziliandelight.registry.ModCreativeTabs;
@@ -20,6 +22,11 @@ public class BrazilianDelight {
         ModItems.ITEMS.register(modBus);
         ModBlockEntities.BLOCK_ENTITIES.register(modBus);
         ModCreativeTabs.TABS.register(modBus);
+        modBus.addListener(BrazilianDelight::commonSetup);
+    }
+
+    private static void commonSetup(FMLCommonSetupEvent event) {
+        event.enqueueWork(MilkCauldronBlock::registerInteractions);
     }
 
     public static ResourceLocation id(String path) {

@@ -10,9 +10,7 @@ Addon for [Farmer's Delight](https://modrinth.com/mod/farmers-delight) bringing 
 
 ### Planned
 
-- [ ] Wild cassava
-  - [ ] Generates in savannas
-- [ ] Cassava crop 
+
 - [ ] Coffee beans
   - [ ] Coffee
   - [ ] Coffee with milk
@@ -48,6 +46,13 @@ Addon for [Farmer's Delight](https://modrinth.com/mod/farmers-delight) bringing 
 - [x] Cassava starch (crafting)
 - [x] Toasted cassava flour (crafting)
 - [x] Cheese bread (cooking pot)
+- [x]  Wild cassava
+  - [x] Generates in savannas
+- [x] Cassava crop 
+- [x] Grater 
+  - [x] crafting based on create sanding
+- [x] Cheese
+
 
 ## Bug reports
 
@@ -67,5 +72,3 @@ Only **art** contributions are accepted: items and blocks.
 - 16x16 pixel art, following the Farmer's Delight style (dark outline, few tones, light from the top left)
 - Color palettes used in the mod are in [`palettes/`](palettes)
 - Send a PNG through an [issue](https://github.com/null-mods/brazilian-delight/issues) or a pull request adding it to `src/main/resources/assets/brazilian_delight/textures/`
-
-Code pull requests are not accepted: I'm not vibe coding this project, and I don't have the time to review outside code.

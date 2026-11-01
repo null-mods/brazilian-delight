@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "curdled=false": {
+      "model": "brazilian_delight:block/milk_cauldron"
+    },
+    "curdled=true": {
+      "model": "brazilian_delight:block/milk_cauldron_curdled"
+    }
+  }
+}

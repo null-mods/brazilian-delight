@@ -13,7 +13,6 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec3;
-import net.nullmods.braziliandelight.registry.ModItems;
 
 public class GraterItem extends Item {
     private static final int USE_TICKS = 32;
@@ -23,13 +22,6 @@ public class GraterItem extends Item {
         super(properties);
     }
 
-    public static ItemStack gratedResult(ItemStack ingredient) {
-        if (ingredient.is(ModItems.CASSAVA.get())) {
-            return new ItemStack(ModItems.GRATED_CASSAVA.get());
-        }
-        return ItemStack.EMPTY;
-    }
-
     private static InteractionHand otherHand(InteractionHand hand) {
         return hand == InteractionHand.MAIN_HAND ? InteractionHand.OFF_HAND : InteractionHand.MAIN_HAND;
     }
@@ -37,7 +29,7 @@ public class GraterItem extends Item {
     @Override
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
         ItemStack grater = player.getItemInHand(hand);
-        if (gratedResult(player.getItemInHand(otherHand(hand))).isEmpty()) {
+        if (GratingRecipe.resultFor(player.getItemInHand(otherHand(hand))).isEmpty()) {
             return InteractionResultHolder.pass(grater);
         }
         player.startUsingItem(hand);
@@ -57,7 +49,7 @@ public class GraterItem extends Item {
     @Override
     public void onUseTick(Level level, LivingEntity entity, ItemStack stack, int remainingTicks) {
         ItemStack ingredient = entity.getItemInHand(otherHand(entity.getUsedItemHand()));
-        if (gratedResult(ingredient).isEmpty()) {
+        if (GratingRecipe.resultFor(ingredient).isEmpty()) {
             entity.releaseUsingItem();
             return;
         }
@@ -83,7 +75,7 @@ public class GraterItem extends Item {
         }
         InteractionHand hand = entity.getUsedItemHand();
         ItemStack ingredient = player.getItemInHand(otherHand(hand));
-        ItemStack result = gratedResult(ingredient);
+        ItemStack result = GratingRecipe.resultFor(ingredient);
         if (result.isEmpty()) {
             return stack;
         }

@@ -18,13 +18,7 @@ public final class ModFoods {
             .alwaysEdible()
             .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 1200, 0), 0.3F)
             .build();
-
-    public static final FoodProperties CASSAVA = new FoodProperties.Builder()
-            .nutrition(1)
-            .saturationModifier(0.3F)
-            .effect(() -> new MobEffectInstance(MobEffects.POISON, 300, 0), 0.9F)
-            .build();
-
+            
     public static final FoodProperties COOKED_CASSAVA = new FoodProperties.Builder()
             .nutrition(3)
             .saturationModifier(0.6F)
@@ -34,6 +28,12 @@ public final class ModFoods {
             .nutrition(4)
             .saturationModifier(0.65F)
             .effect(() -> new MobEffectInstance(MobEffects.DIG_SPEED, 1200, 0), 0.45F)
+            .build();
+
+    public static final FoodProperties CHEESE_SLICE = new FoodProperties.Builder()
+            .nutrition(2)
+            .saturationModifier(0.5F)
+            .fast()
             .build();
 
     private ModFoods() {

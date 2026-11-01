@@ -20,7 +20,7 @@ public final class ModItems {
                     false));
 
     public static final DeferredItem<Item> CASSAVA = ITEMS.register("cassava",
-            () -> new ItemNameBlockItem(ModBlocks.CASSAVA_CROP.get(), new Item.Properties().food(ModFoods.CASSAVA)));
+            () -> new ItemNameBlockItem(ModBlocks.CASSAVA_CROP.get(), new Item.Properties()));
 
     public static final DeferredItem<Item> WILD_CASSAVA = ITEMS.register("wild_cassava",
             () -> new BlockItem(ModBlocks.WILD_CASSAVA.get(), new Item.Properties()));
@@ -42,6 +42,15 @@ public final class ModItems {
 
     public static final DeferredItem<Item> GRATER = ITEMS.register("grater",
             () -> new GraterItem(new Item.Properties().durability(250)));
+
+    public static final DeferredItem<Item> CHEESE_WHEEL = ITEMS.register("cheese_wheel",
+            () -> new BlockItem(ModBlocks.CHEESE_WHEEL.get(), new Item.Properties().stacksTo(16)));
+
+    public static final DeferredItem<Item> CHEESE_SLICE = ITEMS.register("cheese_slice",
+            () -> new Item(new Item.Properties().food(ModFoods.CHEESE_SLICE)));
+
+    public static final DeferredItem<Item> GRATED_CHEESE = ITEMS.register("grated_cheese",
+            () -> new Item(new Item.Properties()));
 
     private ModItems() {
     }

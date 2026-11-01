@@ -1,0 +1,9 @@
+{
+  "parent": "farmersdelight:block/template_pie_slice2",
+  "textures": {
+    "bottom": "brazilian_delight:block/cheese_wheel_bottom",
+    "inner": "brazilian_delight:block/cheese_wheel_inner",
+    "side": "brazilian_delight:block/cheese_wheel_side",
+    "top": "brazilian_delight:block/cheese_wheel_top"
+  }
+}
