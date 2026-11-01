@@ -7,5 +7,9 @@
     "item.brazilian_delight.cooked_cassava": "Cooked Cassava",
     "item.brazilian_delight.toasted_cassava_flour": "Toasted Cassava Flour",
     "item.brazilian_delight.cassava_starch": "Cassava Starch",
-    "item.brazilian_delight.cheese_bread": "Cheese_Bread"
+    "item.brazilian_delight.cheese_bread": "Cheese_Bread",
+    "block.brazilian_delight.cassava_crop": "Cassava Crop",
+    "block.brazilian_delight.wild_cassava": "Wild Cassava",
+    "item.brazilian_delight.grater": "Grater",
+    "item.brazilian_delight.grated_cassava": "Grated Cassava"
 }

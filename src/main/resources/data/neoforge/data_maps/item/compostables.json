@@ -5,6 +5,12 @@
     },
     "brazilian_delight:cassava": {
       "chance": 0.5
+    },
+    "brazilian_delight:wild_cassava": {
+      "chance": 0.65
+    },
+    "brazilian_delight:grated_cassava": {
+      "chance": 0.5
     }
   }
 }

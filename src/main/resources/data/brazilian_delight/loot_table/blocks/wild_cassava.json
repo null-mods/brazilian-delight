@@ -1,0 +1,67 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.2
+        },
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "neoforge:can_item_perform_ability",
+            "ability": "shears_harvest"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "brazilian_delight:cassava"
+        }
+      ]
+    },
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "brazilian_delight:wild_cassava",
+              "conditions": [
+                {
+                  "condition": "neoforge:can_item_perform_ability",
+                  "ability": "shears_harvest"
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "brazilian_delight:cassava",
+              "functions": [
+                {
+                  "function": "minecraft:explosion_decay"
+                },
+                {
+                  "function": "minecraft:apply_bonus",
+                  "enchantment": "minecraft:fortune",
+                  "formula": "minecraft:uniform_bonus_count",
+                  "parameters": {
+                    "bonusMultiplier": 2
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "random_sequence": "brazilian_delight:blocks/wild_cassava"
+}

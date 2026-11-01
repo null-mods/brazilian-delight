@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "category": "food",
+  "ingredient": {
+    "item": "brazilian_delight:grated_cassava"
+  },
+  "result": {
+    "id": "brazilian_delight:toasted_cassava_flour"
+  },
+  "experience": 0.35,
+  "cookingtime": 600
+}

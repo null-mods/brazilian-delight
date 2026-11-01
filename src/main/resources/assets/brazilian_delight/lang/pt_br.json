@@ -7,5 +7,9 @@
     "item.brazilian_delight.cooked_cassava": "Mandioca Cozida",
     "item.brazilian_delight.toasted_cassava_flour": "Farinha de Mandioca",
     "item.brazilian_delight.cassava_starch": "Polvilho",
-    "item.brazilian_delight.cheese_bread": "Pão de Queijo"
+    "item.brazilian_delight.cheese_bread": "Pão de Queijo",
+    "block.brazilian_delight.cassava_crop": "Plantação de Mandioca",
+    "block.brazilian_delight.wild_cassava": "Mandioca Selvagem",
+    "item.brazilian_delight.grater": "Ralador",
+    "item.brazilian_delight.grated_cassava": "Mandioca Ralada"
 }

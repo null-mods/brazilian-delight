@@ -1,10 +1,12 @@
 package net.nullmods.braziliandelight.registry;
 
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemNameBlockItem;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.nullmods.braziliandelight.BrazilianDelight;
+import net.nullmods.braziliandelight.item.GraterItem;
 import vectorwing.farmersdelight.common.item.DrinkableItem;
 
 public final class ModItems {
@@ -18,10 +20,16 @@ public final class ModItems {
                     false));
 
     public static final DeferredItem<Item> CASSAVA = ITEMS.register("cassava",
-            () -> new Item(new Item.Properties().stacksTo(64).food(ModFoods.CASSAVA)));
+            () -> new ItemNameBlockItem(ModBlocks.CASSAVA_CROP.get(), new Item.Properties().food(ModFoods.CASSAVA)));
+
+    public static final DeferredItem<Item> WILD_CASSAVA = ITEMS.register("wild_cassava",
+            () -> new BlockItem(ModBlocks.WILD_CASSAVA.get(), new Item.Properties()));
 
     public static final DeferredItem<Item> COOKED_CASSAVA = ITEMS.register("cooked_cassava",
             () -> new Item(new Item.Properties().stacksTo(64).food(ModFoods.COOKED_CASSAVA)));
+
+    public static final DeferredItem<Item> GRATED_CASSAVA = ITEMS.register("grated_cassava",
+            () -> new Item(new Item.Properties()));
 
     public static final DeferredItem<Item> TOASTED_CASSAVA_FLOUR = ITEMS.register("toasted_cassava_flour",
             () -> new Item(new Item.Properties().stacksTo(64)));
@@ -31,6 +39,9 @@ public final class ModItems {
 
     public static final DeferredItem<Item> CHEESE_BREAD = ITEMS.register("cheese_bread",
             () -> new Item(new Item.Properties().stacksTo(64).food(ModFoods.CHEESE_BREAD)));
+
+    public static final DeferredItem<Item> GRATER = ITEMS.register("grater",
+            () -> new GraterItem(new Item.Properties().durability(250)));
 
     private ModItems() {
     }
